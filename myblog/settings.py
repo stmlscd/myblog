@@ -26,7 +26,16 @@ SECRET_KEY = "django-insecure-8pzdq2m(6ob5wamu3pyja$(_)#%)vp$zay1&j2dgi80d4(5w86
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-ju8csi8714tf.up-de-fra1-k8s-1.apps.run-on-seenode.com', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = [
+    "https://web-ju8csi8714tf.up-de-fra1-k8s-1.apps.run-on-seenode.com"
+]
+
+ALLOWED_HOSTS = [
+    'web-ju8csi8714tf.up-de-fra1-k8s-1.apps.run-on-seenode.com', 
+    'www.sellma.kr',
+    'localhost',
+    '127.0.0.1'
+    ]
 
 
 # Application definition
