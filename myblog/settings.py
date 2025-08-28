@@ -58,15 +58,6 @@ INSTALLED_APPS = [
 # CKEDITOR 업로드 경로 설정
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'Full',
-        'height': 300,
-        'width': '100%',
-        'extraPlugins': 'uploadimage, image2',
-    },
-}
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
