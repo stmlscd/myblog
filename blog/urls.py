@@ -1,4 +1,6 @@
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from .views import blog_list, blog_detail, post_like, search
 
 urlpatterns = [
@@ -6,4 +8,4 @@ urlpatterns = [
     path('posts/<int:pk>/', blog_detail, name="detail"),
     path('like_posts/<int:pk>/', post_like, name="like"),
     path('post/search_results', search, name="search")
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
