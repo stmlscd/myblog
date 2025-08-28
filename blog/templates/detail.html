@@ -7,7 +7,9 @@
         <div class="col-lg-12 mx-auto">
           <!-- Post Details -->
           <div class="card">
+            {% if posts.image %}
             <img src="{{posts.image.url}}" class="card-img-top" alt="{{posts.title}}" />
+            {% endif %}
             <div class="card-body">
               <h2 class="card-title">
                 {{posts.title}}
